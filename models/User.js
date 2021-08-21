@@ -17,13 +17,13 @@ const UserSchema = new Schema({
   password: {
     type: String,
     required: [true, 'There is no password'],
-    minlength: [8, 'Password must be less than 8 characters'],
+    minlength: [8, 'Password must be more than 8 characters'],
     select: false,
   },
   passwordConfirm: {
     type: String,
     required: [true, 'There is no password'],
-    minlength: [8, 'Password must be less than 8 characters'],
+    minlength: [8, 'Password must be more than 8 characters'],
     select: false,
   },
   posts: {
