@@ -60,7 +60,7 @@ class UserController {
         },
       })
     } catch (err) {
-      res.status(404).json({
+      res.status(400).json({
         status: 'error',
         message: 'Not Found, no user found with this id',
       })
